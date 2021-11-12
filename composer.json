@@ -1,6 +1,6 @@
 {
-    "name": "tecdynamics/cms",
-    "description": "Tec - Laravel web installer",
+    "name": "tecdynamics/cms-install",
+    "description": "Tec-Laravel installer",
     "license": "MIT",
     "authors": [
         {
