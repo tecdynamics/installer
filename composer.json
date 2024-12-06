@@ -1,37 +1,20 @@
 {
     "name": "tecdynamics/installer",
-    "description": "Tec-installer",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Michail Fragkiskos",
-            "homepage": "https://github.com/tecdynamics/installer",
-            "role": "Manager",
-            "email": "support@tecdynamics.co.uk"
-        }
-    ],
-    "require": {
-        "php": ">=7.0.0"
-    },
+    "description": "Installer package for Tec CMS application",
+    "type": "package",
     "autoload": {
         "psr-4": {
-            "tecdynamics\\installer\\": "src/"
-        },
-        "files": [
-            "src/Helpers/functions.php"
-        ]
+            "Tec\\Installer\\": "src"
+        }
+    },
+    "require": {
+        "tecdynamics/platform": "*@dev"
     },
     "extra": {
         "laravel": {
             "providers": [
-                    "tecdynamics\\installer\\Providers\\LaravelInstallerServiceProvider"
-
+                "Tec\\Installer\\Providers\\InstallerServiceProvider"
             ]
         }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability" : "dev"
-
+    }
 }
